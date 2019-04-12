@@ -10,6 +10,8 @@ stage('git checkout')
  stage('python')
    {
     withPythonEnv('python') {
+          
+    sh 'pip install pytest'
     sh 'which pytest'
     
     }  
