@@ -13,6 +13,7 @@ stage('git checkout')
           
     sh 'pip install pytest'
         sh 'pip install mock'
+          sh 'pip install pytest_mock'
 
     sh 'pytest'
     
