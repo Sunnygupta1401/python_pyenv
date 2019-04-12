@@ -16,6 +16,8 @@ stage('git checkout')
           sh 'pip install pytest_mock'
 
     sh 'pytest'
+          
+          sh 'which pytest'
     
     }  
       
