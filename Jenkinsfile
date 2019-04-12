@@ -10,7 +10,7 @@ stage('git checkout')
  stage('python')
    {
     withPythonEnv('python') {
-    sh 'which python'
+    sh 'which pytest'
     
     }  
       
