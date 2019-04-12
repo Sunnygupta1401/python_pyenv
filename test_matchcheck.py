@@ -20,4 +20,4 @@ def test_answer1():
     mathcheck.sums = MagicMock(return_value=3,name ="test")
     result =  mathcheck.sums(3,8)
     assert result == 3
-    mathcheck.sums.assert_called_once_with(3,9)
+    mathcheck.sums.assert_called_once_with(3,8)
