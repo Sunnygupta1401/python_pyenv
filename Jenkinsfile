@@ -12,6 +12,8 @@ stage('git checkout')
     withPythonEnv('python') {
           
     sh 'pip install pytest'
+        sh 'pip install mock'
+
     sh 'pytest'
     
     }  
